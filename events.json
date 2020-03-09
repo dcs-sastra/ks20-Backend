@@ -1,0 +1,21 @@
+{
+	"fest": "ks20",
+	"eventTitle": "",
+	"eventDescription": "",
+	"rules": [
+		{
+			"ruleName": "",
+			"ruleDescription": "",
+			"specificRules": ["", ""]
+		},
+		{
+			"ruleName": "",
+			"ruleDescription": "",
+			"specificRules": ["", ""]
+		}
+	],
+	"contacts": [
+		{ "name": "", "contact": "" },
+		{ "name": "", "contact": "" }
+	]
+}
