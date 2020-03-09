@@ -12,9 +12,9 @@ router.get('/events', async (req, res) => {
 });
 
 router.post('/events', async (req, res) => {
-	const event = req.body;
+	const eventData = req.body;
 	console.log(eventTitle);
-	const event = new Event({ ...event });
+	const event = new Event({ ...eventData });
 	const eventF = await event.save().catch(e => console.log(e));
 	if (eventF) {
 		console.log(eventF);
