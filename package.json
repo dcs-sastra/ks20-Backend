@@ -3,11 +3,14 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
-	"scripts": {
-		"start": "node index.js",
-		"nodemon": "nodemon index.js"
+	"engines": {
+		"node": "12.14.1",
+		"npm": "6.13.6"
 	},
-	"author": "",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"author": "DSC sastra",
 	"license": "ISC",
 	"dependencies": {
 		"body-parser": "^1.19.0",
