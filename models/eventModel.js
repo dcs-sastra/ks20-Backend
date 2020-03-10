@@ -1,23 +1,23 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const ruleSchema = new Schema({
-	ruleName: {
-		type: String,
-		required: true
-	},
-	ruleDescription: String,
-	specificRules: [{ type: String }]
-});
 const eventSchema = new Schema({
-	fest: String,
-	eventDescription: String,
-	eventTitle: {
+	eventName: {
 		type: String,
 		required: true
 	},
-	rules: [ruleSchema],
+	eventDescription: String,
+	rules: [{ type: String }],
 	contacts: [{ name: String, contact: String }]
 });
+const clusterSchema = new Schema({
+	fest: String,
+	clusterDescription: String,
+	cluster: {
+		type: String,
+		required: true
+	},
+	events: [eventSchema]
+});
 
-module.exports = mongoose.model('Event', eventSchema);
+module.exports = mongoose.model('Cluster', clusterSchema);
